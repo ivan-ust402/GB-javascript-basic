@@ -22,8 +22,19 @@ function getSalary(salaryWithTax) {
     alert(`Размер заработной платы за вычетом налогов равен ${clearSalary}`);
 }
 
-let accrual = prompt("Введите ваши начисления: ");
+const accrual = parseInt(prompt("Введите ваши начисления: "));100
 
-getSalary(accrual);
+if (isNaN(accrual)) {
+    alert("Значение задано неверно");
+} else {
+    getSalary(accrual);
+}
+
+
+/* 
+Задание 3
+Пользователь с клавиатуры вводит 3 числа, необходимо создать функцию, которая определяет максимальное значение среди этих чисел
+*/
+
 
 
