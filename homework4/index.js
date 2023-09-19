@@ -22,3 +22,18 @@ for (let i = 0; i < 11; i++) {
     }
     console.log(`${i} - ${value}`);   
 }
+
+console.log("");
+
+/* 
+Задание 2
+Дан массив [1, 2, 3, 4, 5, 6, 7]
+Сделайте из этого массива следующий [1, 2, 3, 6, 7]
+*/
+console.log('Задание 2')
+const arr = [1, 2, 3, 4, 5, 6, 7];
+const res = arr.filter((el) => el !== 4 && el !== 5);
+
+console.log(arr);
+console.log(res);
+console.log("");
