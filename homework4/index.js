@@ -31,9 +31,34 @@ console.log("");
 Сделайте из этого массива следующий [1, 2, 3, 6, 7]
 */
 console.log('Задание 2')
-const arr = [1, 2, 3, 4, 5, 6, 7];
-const res = arr.filter((el) => el !== 4 && el !== 5);
+const arr2 = [1, 2, 3, 4, 5, 6, 7];
+const res = arr2.filter((el) => el !== 4 && el !== 5);
 
-console.log(arr);
+console.log(arr2);
 console.log(res);
 console.log("");
+
+/* 
+Задание 3
+Используя Math.random() вам необходимо генерировать цифры от 0 до 9, и создать массив состоящий из 5 таких элементов
+1. Рассчитать сумму элементов этого массива
+2. Найти минимальное число
+3. Найти есть ли в этом массиве число 3
+*/
+
+console.log('Задание 3');
+
+const arr3 = Array.from({length: 5}, (el) => el = Math.floor(Math.random()*10));
+
+const sum3 = arr3.reduce((acc, el) => acc + el, 0);
+const min3 = arr3.reduce((acc, el) => Math.min(acc, el));
+
+const existThree = (arr3.indexOf(3) !== -1) 
+    ? 'Да, число 3 есть в массиве'
+    : 'Нет числа 3 в массиве'
+
+console.log(arr3);
+console.log(sum3);
+console.log(min3);
+console.log(existThree);
+console.log('');
