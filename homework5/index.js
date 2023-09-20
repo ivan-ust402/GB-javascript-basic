@@ -202,6 +202,8 @@ console.log(filterRes4);
 products4.sort((prevEl, curEl) => prevEl.price - curEl.price);
 console.log(products4);
 
+console.log('');
+
 
 /* Задание 5
     Дано 2 массива 
@@ -209,3 +211,17 @@ console.log(products4);
         const ru = ["понедельник", "вторник", "среда", "четверг", "пятница", "суббота", "воскресенье"]; 
     Вам необходимо объединить 2 этих массива, чтобы значения первого массива были ключами, а значения второго массива — значениями.
 */
+console.log('Задание 5');
+
+const en = ["mon", "tue", "wed", "thu", "fri", "sat", "sun"];
+const ru = ["понедельник", "вторник", "среда", "четверг", "пятница", "суббота", "воскресенье"]; 
+const obj5 = en.reduce((acc, el, indx) => {
+    acc[el] = ru[indx];
+    return acc;
+}, {});
+
+console.log(obj5);
+
+
+
+
