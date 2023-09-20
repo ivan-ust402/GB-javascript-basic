@@ -167,8 +167,45 @@ console.log('');
         []()
 */
 
+console.log('Задание 4');
+
+const products4 = [
+    {
+        id: 3,
+        price: 127,
+        photos: [
+            "1.jpg",
+            "2.jpg",
+        ],
+    },
+    {
+        id: 5,
+        price: 499,
+        photos: [],
+    },
+    {
+        id: 10,
+        price: 26,
+        photos: [
+            "3.jpg",
+        ],
+    },
+    {
+        id: 8,
+        price: 78,
+    },
+];
+
+const filterRes4 = products4.filter((el) => el.photos && el.photos.length > 0)
+console.log(filterRes4);
+
+products4.sort((prevEl, curEl) => prevEl.price - curEl.price);
+console.log(products4);
+
+
 /* Задание 5
     Дано 2 массива 
         const en = ["mon", "tue", "wed", "thu", "fri", "sat", "sun"];
         const ru = ["понедельник", "вторник", "среда", "четверг", "пятница", "суббота", "воскресенье"]; 
+    Вам необходимо объединить 2 этих массива, чтобы значения первого массива были ключами, а значения второго массива — значениями.
 */
